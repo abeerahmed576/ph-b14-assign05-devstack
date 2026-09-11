@@ -2,13 +2,13 @@ function Hero() {
   return (
     <div
       className="
-      container mx-auto py-12
-      flex justify-between items-center"
+      container mx-auto py-12 items-center
+      flex flex-col sm:flex-row"
     >
-      <div className="space-y-12">
+      <div className="space-y-12 text-center md:text-start">
         <h1
           className="
-        capitalize text-6xl
+        capitalize text-4xl md:text-6xl
         font-heading font-extrabold"
         >
           build your ideal <br />
@@ -16,16 +16,15 @@ function Hero() {
             development stack
           </span>
         </h1>
-        <p className="text-(--color-para) text-xl w-2/3">
+        <p className="text-(--color-para-600) text-xl mx-6 sm:mx-0 md:w-[65%]">
           Explore frontend, backend, database, and tooling options, compare them
           side by side, and put together the stack that fits your next project.
         </p>
-
         <div className="space-x-4">
-          <button className="capitalize text-white btn bg-brand-gradient-2 rounded-(--btn-radius)">
+          <button className="py-6 sm:py-5 capitalize text-white btn bg-brand-gradient-2 rounded-(--btn-radius)">
             explore technologies
           </button>
-          <button className="px-16 capitalize btn bg-transparent rounded-(--btn-radius)">
+          <button className="px-16 py-6 sm:py-5 capitalize btn bg-transparent rounded-(--btn-radius)">
             learn more
           </button>
         </div>

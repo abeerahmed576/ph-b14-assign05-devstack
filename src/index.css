@@ -13,7 +13,10 @@
   --color-end: #7c3aed;
 
   --color-divide: #f1f5f9;
-  --color-para: #64748b;
+
+  --color-para-400: #939eae;
+  --color-para-500: #64748b;
+  --color-para-600: #5a687d;
 
   --btn-radius: 10px;
 }
