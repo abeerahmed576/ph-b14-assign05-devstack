@@ -1,0 +1,39 @@
+/* Inter and Plus Jakarta fonts from Google */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --font-main: "Plus Jakarta Sans", sans-serif;
+
+  --color-start: #ff5722;
+  --color-primary: #d81b7e;
+  --color-end: #7c3aed;
+
+  --color-divide: #f1f5f9;
+  --color-para: #64748b;
+
+  --btn-radius: 10px;
+}
+
+/* For Tailwind CSS */
+@theme {
+  --font-heading: "Inter", sans-serif;
+  --background-image-brand-gradient: linear-gradient(
+    to right,
+    var(--color-start),
+    var(--color-primary),
+    var(--color-end)
+  );
+  --background-image-brand-gradient-2: linear-gradient(
+    to right,
+    var(--color-start),
+    var(--color-primary)
+  );
+}
+
+html {
+  font-family: var(--font-main);
+}
