@@ -35,6 +35,11 @@
     var(--color-start),
     var(--color-primary)
   );
+  --background-image-brand-gradient-3: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-end)
+  );
 }
 
 html {

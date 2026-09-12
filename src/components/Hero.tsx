@@ -2,7 +2,7 @@ function Hero() {
   return (
     <div
       className="
-      container mx-auto py-12 items-center
+      container mx-auto mt-12 sm:mb-12 items-center
       flex flex-col sm:flex-row"
     >
       <div className="space-y-12 text-center md:text-start">

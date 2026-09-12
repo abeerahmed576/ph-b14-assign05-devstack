@@ -1,9 +1,9 @@
 function LinkSection({ title, links }: { title: string; links: string[] }) {
   return (
-    <ul>
+    <ul className="space-y-1">
       <h4 className="mb-4 capitalize font-bold">{title}</h4>
-      {links.map((link) => (
-        <li className="capitalize text-(--color-para-500)">
+      {links.map((link, index) => (
+        <li key={index} className="capitalize text-(--color-para-500)">
           <a href="#">{link}</a>
         </li>
       ))}
@@ -25,11 +25,11 @@ function Footer() {
             <li>
               <a href="#">Github</a>
             </li>
-            <span className="inline sm:hidden pt-1 text-[4px]">&#11044;</span>
+            <span className="sm:hidden pt-1 text-[4px]">&#11044;</span>
             <li>
               <a href="#">Twitter</a>
             </li>
-            <span className="inline sm:hidden pt-1 text-[4px]">&#11044;</span>
+            <span className="sm:hidden pt-1 text-[4px]">&#11044;</span>
             <li>
               <a href="#">LinkedIn</a>
             </li>

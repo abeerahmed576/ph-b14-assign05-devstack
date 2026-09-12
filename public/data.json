@@ -1,0 +1,122 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "category": "Frontend",
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": "vuejs",
+    "name": "VueJS",
+    "category": "Frontend",
+    "description": "A progressive JavaScript framework for building user interfaces and single-page applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Vue.js.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": "svelte",
+    "name": "Svelte",
+    "category": "Frontend",
+    "description": "A modern frontend framework that compiles components into efficient JavaScript at build time.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Svelte.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Modern"
+  },
+  {
+    "id": "nextjs",
+    "name": "NextJS",
+    "category": "Full Stack",
+    "description": "A React framework for building fast, scalable web applications with server-side rendering and static generation.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": "nodejs",
+    "name": "NodeJS",
+    "category": "Backend",
+    "description": "A JavaScript runtime built on Chrome's V8 engine for building scalable server-side applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "A powerful open-source relational database system known for reliability, extensibility, and SQL compliance.",
+    "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Reliable"
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "category": "Database",
+    "description": "An in-memory data store commonly used for caching, session management, messaging, and real-time applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Redis.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Fast"
+  },
+  {
+    "id": "javascript",
+    "name": "Javascript",
+    "category": "Programming Language",
+    "description": "A versatile programming language that powers interactive web applications and modern server-side development.",
+    "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential"
+  },
+  {
+    "id": "typescript",
+    "name": "Typescript",
+    "category": "Programming Language",
+    "description": "A strongly typed programming language built on JavaScript that improves code quality and developer productivity.",
+    "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "category": "Programming Language",
+    "description": "A mature, object-oriented programming language widely used for enterprise, backend, Android, and large-scale applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Java.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Enterprise"
+  },
+  {
+    "id": "tailwindcss",
+    "name": "TailwindCSS",
+    "category": "CSS Framework",
+    "description": "A utility-first CSS framework for rapidly building modern and highly customizable user interfaces.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Trending"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "A platform for developing, packaging, and running applications in lightweight and portable containers.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Essential"
+  }
+]
