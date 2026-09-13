@@ -1,7 +1,21 @@
-function Li({ label }: { label: string }) {
+import { useState, type Dispatch } from "react";
+
+interface ILiProps {
+  label: string;
+  currentPage: string;
+  setCurrentPage: Dispatch<React.SetStateAction<string>>;
+}
+function Li({ label, currentPage, setCurrentPage }: ILiProps) {
+  const handlePageClick = () => {
+    setCurrentPage(label);
+  };
+
   return (
-    <li className="cursor-pointer hover:text-(--color-primary) capitalize">
-      {label}
+    <li
+      onClick={handlePageClick}
+      className={`cursor-pointer capitalize ${currentPage === label ? "text-(--color-primary)" : ""}`}
+    >
+      <a href="#">{label}</a>
     </li>
   );
 }
@@ -23,6 +37,8 @@ function Button({
 }
 
 function NavBar() {
+  const [currentPage, setCurrentPage] = useState<string>("home");
+
   return (
     <div className="bg-white border- border-b-(--color-divide) sticky top-0 z-50">
       <nav
@@ -38,11 +54,31 @@ function NavBar() {
           alt="devstack logo"
         />
         <ul className="hidden justify-between items-center space-x-8 sm:flex">
-          <Li label="home" />
-          <Li label="technologies" />
-          <Li label="projects" />
-          <Li label="about" />
-          <Li label="contact" />
+          <Li
+            label="home"
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
+          <Li
+            label="technologies"
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
+          <Li
+            label="projects"
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
+          <Li
+            label="about"
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
+          <Li
+            label="contact"
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
         </ul>
 
         <div className="space-x-1">
