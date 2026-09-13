@@ -42,7 +42,9 @@ function TechCard({
             src={techInfo.icon}
             alt={`${techInfo.name} logo`}
           />
-          <span className={"badge rounded-full"}>{techInfo.badge}</span>
+          <span className="py-3 font-semibold badge text-white bg-brand-gradient-2 rounded-full">
+            {techInfo.badge}
+          </span>
         </div>
         <h2 className="text-xl font-bold">{techInfo.name}</h2>
         <p className="pb-2 text-(--color-para-500) border-b border-b-(--color-divide)">

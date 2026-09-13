@@ -26,7 +26,7 @@ function Technologies() {
 
       <Suspense
         fallback={
-          <div className="my-50 space-x-3 text-center">
+          <div className="my-40 space-x-3 text-center">
             <span className="mb-2 loading loading-spinner"></span>
             <span className="text-2xl">Loading Technologies</span>
           </div>
