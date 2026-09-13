@@ -29,10 +29,16 @@ function TechCard({
   };
 
   return (
-    <div className="card rounded-xl shadow-sm">
+    <div
+      className={`card rounded-xl shadow-sm ${isBtnSelected ? "border border-green-400" : ""}`}
+    >
       <div className="card-body space-y-2">
         <div className="flex justify-between">
-          <img src="/favicon.png" alt={`${techInfo.name} logo`} />
+          <img
+            className="scale-75"
+            src={techInfo.icon}
+            alt={`${techInfo.name} logo`}
+          />
           <span className="badge rounded-full">{techInfo.badge}</span>
         </div>
         <h2 className="text-xl font-bold">{techInfo.name}</h2>

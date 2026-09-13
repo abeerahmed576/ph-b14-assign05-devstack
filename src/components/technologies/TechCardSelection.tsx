@@ -24,7 +24,7 @@ function TechCardSelection({
   };
 
   return (
-    <div className="min-w-11/12 sm:min-w-[20%] max-h-min card rounded-xl shadow-sm">
+    <div className="min-w-11/12 sm:min-w-[23%] max-h-min card rounded-xl shadow-sm">
       <div className="card-body space-y-2">
         <h2 className="text-xl font-bold">Your Stack</h2>
         <p className="text-(--color-para-500)">

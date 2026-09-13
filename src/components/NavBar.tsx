@@ -1,5 +1,9 @@
 function Li({ label }: { label: string }) {
-  return <li className="hover:text-(--color-primary) capitalize">{label}</li>;
+  return (
+    <li className="cursor-pointer hover:text-(--color-primary) capitalize">
+      {label}
+    </li>
+  );
 }
 
 function Button({
@@ -20,7 +24,7 @@ function Button({
 
 function NavBar() {
   return (
-    <div className="border-b border-b-(--color-divide)">
+    <div className="bg-white border-b border-b-(--color-divide) sticky top-0 z-50">
       <nav
         className="
         h-14 sm:h-18 px-4 sm:px-0
@@ -41,7 +45,7 @@ function NavBar() {
           <Li label="contact" />
         </ul>
 
-        <div>
+        <div className="space-x-1">
           <Button label="sign in" extraClasses="btn-ghost" />
           <Button
             label="sign up"

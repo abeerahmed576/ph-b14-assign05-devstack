@@ -14,15 +14,21 @@ function SelectedTechCards({
     const remainingTechs = selectedTechs.filter(
       (selectedTech: ITechInfo) => selectedTech.id !== techInfo.id,
     );
-    console.log(selectedTechs);
     setSelectedTechs(remainingTechs);
   };
   return (
     <>
       {selectedTechs.map((techInfo) => (
-        <div className="p-3 border border-[#E2E8F0] rounded-xl flex justify-between items-center">
+        <div
+          key={techInfo.id}
+          className="p-3 border border-[#E2E8F0] rounded-xl flex justify-between items-center"
+        >
           <div className="flex space-x-3 items-center">
-            <img src="/favicon.png" alt="" />
+            <img
+              className="scale-75"
+              src={techInfo.icon}
+              alt={`${techInfo.name} logo`}
+            />
             <div>
               <h4 className="font-bold text-sm">{techInfo.name}</h4>
               <p className="text-[9px] text-(--color-para-600)">
