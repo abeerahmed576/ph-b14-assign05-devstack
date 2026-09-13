@@ -56,20 +56,14 @@ The `useState` hook allows a React component to store and update data internally
 In this project, I used `useState` to manage things such as:
 
 - The current page (Home, Projects, Technologies, ........).
-- The technology data loaded from the JSON file.
-
-For example:
-
-```tsx
-const [selectedTechs, setSelectedTechs] = useState<ITechInfo[]>([]);
-```
-When the selected technologies change, React re-renders the UI to show the updated stack.
-
-And,
-
-```tsx
-const [currentPage, setCurrentPage] = useState<string>("home");
-```
+  ```tsx
+  const [currentPage, setCurrentPage] = useState<string>("home");
+  ```
+- The list of technologies currently selected by the user.
+  ```tsx
+  const [selectedTechs, setSelectedTechs] = useState<ITechInfo[]>([]);
+  ```
+  When the selected technologies change, React re-renders the UI to show the updated stack.
 
 ---
 
@@ -91,13 +85,13 @@ It helps React understand which items have been added, removed, or changed, so i
 
 ### 6. What is conditional rendering? Show one place you used it.
 
-`Conditional rendering` means displaying different UI depending on a condition.
+`Conditional Rendering` means displaying different UI depending on a condition.
 
 In this project, I used it in the **Your Stack** section.
 
-If no technology is selected, an message is displayed saying "Your stack is empty". Otherwise, the selected technologies are displayed.
+If no technology is selected, a message is displayed saying "Your stack is empty". Otherwise, the selected technologies are displayed.
 
-The code implementing `Conditional rendering`:
+The code implementing `Conditional Rendering`:
 
 ```tsx
 {selectedTechs.length === 0 ? (
@@ -129,16 +123,10 @@ A child can send information back to the parent by receiving a **callback functi
 Example:
 
 ```tsx
-<TechnologyCard
-  technology={technology}
+<TechCardContainer
+  selectedTechs={selectedTechs}
   onAdd={handleAddToStack}
 />
 ```
 
-The child can then call:
-
-```tsx
-onAdd(technology);
-```
-
-This allows the parent component to control the state while the child communicates user actions back to the parent.
+The child can then call the `onAdd` handler as needed, which then updates `selectedTechs` owned by the parent. This allows the parent component to control the state while the child communicates user actions back to the parent.
