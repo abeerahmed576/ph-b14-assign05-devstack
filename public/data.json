@@ -72,7 +72,7 @@
   {
     "id": "javascript",
     "name": "Javascript",
-    "category": "Programming Language",
+    "category": "Language",
     "description": "A versatile programming language that powers interactive web applications and modern server-side development.",
     "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
     "rating": 4.9,
@@ -82,7 +82,7 @@
   {
     "id": "typescript",
     "name": "Typescript",
-    "category": "Programming Language",
+    "category": "Language",
     "description": "A strongly typed programming language built on JavaScript that improves code quality and developer productivity.",
     "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
     "rating": 4.9,
@@ -92,7 +92,7 @@
   {
     "id": "java",
     "name": "Java",
-    "category": "Programming Language",
+    "category": "Language",
     "description": "A mature, object-oriented programming language widely used for enterprise, backend, Android, and large-scale applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/Java.svg",
     "rating": 4.7,
@@ -102,7 +102,7 @@
   {
     "id": "tailwindcss",
     "name": "TailwindCSS",
-    "category": "CSS Framework",
+    "category": "Styling",
     "description": "A utility-first CSS framework for rapidly building modern and highly customizable user interfaces.",
     "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
     "rating": 4.8,

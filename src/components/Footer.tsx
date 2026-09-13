@@ -25,11 +25,11 @@ function Footer() {
             <li>
               <a href="#">Github</a>
             </li>
-            <span className="sm:hidden pt-1 text-[4px]">&#11044;</span>
+            <span className="sm:hidden pt-1 text-[4px]">⬤</span>
             <li>
               <a href="#">Twitter</a>
             </li>
-            <span className="sm:hidden pt-1 text-[4px]">&#11044;</span>
+            <span className="sm:hidden pt-1 text-[4px]">⬤</span>
             <li>
               <a href="#">LinkedIn</a>
             </li>
@@ -53,7 +53,7 @@ function Footer() {
         </div>
       </div>
       <div className="mt-4 sm:mt-10 mb-10 sm:mb-16 mx-6 sm:mx-0 text-(--color-para-400) text-[11px] sm:text-base flex justify-between">
-        <span>&copy; 2026 Dev Stack. All Rights Reserved.</span>
+        <span>© 2026 Dev Stack. All Rights Reserved.</span>
         <div>
           <ul className="space-x-4 sm:space-x-10 flex">
             <li>
