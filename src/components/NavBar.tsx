@@ -24,7 +24,7 @@ function Button({
 
 function NavBar() {
   return (
-    <div className="bg-white border-b border-b-(--color-divide) sticky top-0 z-50">
+    <div className="bg-white border- border-b-(--color-divide) sticky top-0 z-50">
       <nav
         className="
         h-14 sm:h-18 px-4 sm:px-0
@@ -49,7 +49,7 @@ function NavBar() {
           <Button label="sign in" extraClasses="btn-ghost" />
           <Button
             label="sign up"
-            extraClasses="text-white bg-(--color-primary)"
+            extraClasses="shadow-none text-white bg-(--color-primary)"
           />
         </div>
       </nav>

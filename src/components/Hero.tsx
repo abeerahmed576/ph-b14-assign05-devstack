@@ -24,7 +24,7 @@ function Hero() {
           <button className="py-6 sm:py-5 capitalize text-white btn bg-brand-gradient-2 rounded-(--btn-radius)">
             explore technologies
           </button>
-          <button className="px-16 py-6 sm:py-5 capitalize btn bg-transparent rounded-(--btn-radius)">
+          <button className="px-10 sm:px-16 py-6 sm:py-5 capitalize btn bg-transparent rounded-(--btn-radius)">
             learn more
           </button>
         </div>

@@ -3,21 +3,21 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Technologies from "./components/Technologies";
-import type { ITechInfo } from "./types/TechInfo";
-
-const techInfoPromise = async (): Promise<ITechInfo[]> => {
-  const res = await fetch("/data.json");
-  const data = await res.json();
-  return data;
-};
 
 function App() {
   return (
     <>
       <NavBar />
       <Hero />
-      <Suspense>
-        <Technologies techInfoPromise={techInfoPromise()} />
+      <Suspense
+        fallback={
+          <div className="text-3xl text-center my-10">
+            <span className="mr-3 loading loading-spinner"></span>
+            <span>Loading Technologies</span>
+          </div>
+        }
+      >
+        <Technologies />
       </Suspense>
       <Footer />
     </>

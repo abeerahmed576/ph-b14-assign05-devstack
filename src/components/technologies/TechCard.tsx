@@ -1,5 +1,6 @@
+import { toast } from "react-toastify";
 import type { ITechInfo } from "../../types/TechInfo";
-import { useState, type Dispatch } from "react";
+import { type Dispatch } from "react";
 
 interface ITechCardProps {
   techInfo: ITechInfo;
@@ -22,15 +23,17 @@ function TechCard({
 
   const handleAddToStack = () => {
     if (isCategoryAlreadySelected) {
+      toast.error(`${techInfo.category} already added!`);
       return;
     }
 
     setSelectedTechs([...selectedTechs, techInfo]);
+    toast.success(`${techInfo.name} added to Stack.`);
   };
 
   return (
     <div
-      className={`card rounded-xl shadow-sm ${isBtnSelected ? "border border-green-400" : ""}`}
+      className={`card border border-gray-200 rounded-2xl shadow-sm ${isBtnSelected ? "border border-green-400" : ""}`}
     >
       <div className="card-body space-y-2">
         <div className="flex justify-between">
@@ -39,7 +42,7 @@ function TechCard({
             src={techInfo.icon}
             alt={`${techInfo.name} logo`}
           />
-          <span className="badge rounded-full">{techInfo.badge}</span>
+          <span className={"badge rounded-full"}>{techInfo.badge}</span>
         </div>
         <h2 className="text-xl font-bold">{techInfo.name}</h2>
         <p className="pb-2 text-(--color-para-500) border-b border-b-(--color-divide)">

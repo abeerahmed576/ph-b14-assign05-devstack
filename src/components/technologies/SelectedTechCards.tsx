@@ -1,5 +1,6 @@
 import type { Dispatch } from "react";
 import type { ITechInfo } from "../../types/TechInfo";
+import { toast } from "react-toastify";
 
 interface ISelectedTechCardsProps {
   selectedTechs: ITechInfo[];
@@ -15,7 +16,9 @@ function SelectedTechCards({
       (selectedTech: ITechInfo) => selectedTech.id !== techInfo.id,
     );
     setSelectedTechs(remainingTechs);
+    toast.info(`${techInfo.name} removed from Stack.`);
   };
+
   return (
     <>
       {selectedTechs.map((techInfo) => (
