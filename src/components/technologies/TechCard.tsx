@@ -16,7 +16,15 @@ function TechCard({
     (selectedTech) => selectedTech.id === techInfo.id,
   );
 
+  const isCategoryAlreadySelected = selectedTechs.some(
+    (selectedTech) => selectedTech.category === techInfo.category,
+  );
+
   const handleAddToStack = () => {
+    if (isCategoryAlreadySelected) {
+      return;
+    }
+
     setSelectedTechs([...selectedTechs, techInfo]);
   };
 
